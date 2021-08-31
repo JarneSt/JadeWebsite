@@ -1,12 +1,20 @@
 <template>
 <div class="d-flex bg">
 
+  <!--OLD
   <div class="d-flex w-50 flex-column justify-content-start leftblockheader mt-auto mb-auto ">
     <h1 id="title">Investeer in jezelf</h1>
     <p>Word nu de beste versie van jezelf, door voor jezelf te kiezen.</p>
     <input class="noBlur" type="button" value="MAAK NU EEN AFSPRAAK" @click="redirectAppointment">
   </div>
   <img id="deskPic" class="mt-auto mb-auto" src="../../assets/logo.jpeg" />
+-->
+
+  <div class="d-flex w-50 flex-column justify-content-center leftblockheader mt-auto mb-auto ">
+    <h1 class="text-center" id="title">Investeer in jezelf</h1>
+    <p class="text-center">Word nu de beste versie van jezelf, door voor jezelf te kiezen.</p>
+    <input class="noBlur text-center m-auto" type="button" value="MAAK NU EEN AFSPRAAK" @click="redirectAppointment">
+  </div>
 
 </div>
 </template>
@@ -35,11 +43,13 @@ export default {
 }
 div {
 
-  /*
 
-  background-image: url("../../assets/desk.png");
+/*
+  background-image: url("../../assets/_DSC0074.jpg");
   background-size: 100% 100%;
-  */
+
+ */
+
 }
 
 #deskPic {
@@ -50,8 +60,20 @@ div {
 }
 
 .bg {
+
   background: #8ac7db;
+
   padding: 20px;
+/*
+  background-image: url("../../assets/_DSC0074.jpg");
+  background-size: 100% 100%;
+
+   */
+
+  height: 800px;
+  background-image: url("../../assets/_DSC0074.jpg");
+
+  background-size: cover;
   justify-content: space-evenly;
 }
 
@@ -104,7 +126,21 @@ h1 {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (max-width: 992px){
+  .leftblockheader {
+    width: 75% !important;
+  }
+  input {
+    width: 104%;
+  }
+  p {
+    font-size: 17px;
+  }
+  .bg {
+    padding: 0 !important;
+    background-image: url("../../assets/_DSC0119.jpg");
+  }
+
 
 }
 </style>

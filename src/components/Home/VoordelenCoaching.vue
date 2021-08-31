@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1>Voordelen van coaching</h1>
+  <h1 class="mt-5">Voordelen van coaching</h1>
 
   <div class="d-flex justify-content-center">
     <div>
@@ -11,13 +11,13 @@
 
     <div>
       <i class="fas fa-eye"></i>
-      <h2>Voordeel 1</h2>
+      <h2>Voordeel 2</h2>
       <p>Je bereikt je doelen sneller</p>
     </div>
 
     <div>
       <i class="fas fa-male"></i>
-      <h2>Voordeel 1</h2>
+      <h2>Voordeel 3</h2>
       <p>Je bereikt je doelen sneller</p>
     </div>
   </div>
