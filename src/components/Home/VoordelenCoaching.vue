@@ -74,6 +74,7 @@ svg {
 
 .fullSection {
   margin-top: 5em;
+  margin-bottom: 4em;
 }
 
 @media only screen and (max-width: 992px){

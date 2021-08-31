@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img style="display: none" id="navLogo" src="assets/JadeStaal.png"/>
@@ -41,6 +41,13 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+.navbar {
+  transition: height 3s;
+}
+.navRed {
+  height: 60px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -53,6 +60,13 @@
   margin: 0;
   padding: 0;
 }
+
+/*
+nav {
+  border-bottom: 3px solid #a4bfcf;
+}
+
+ */
 
 #nav a {
   font-weight: bold;
@@ -68,6 +82,10 @@
 </style>
 
 <style scoped>
+.navbar {
+  background-color: white;
+}
+
 #navLogo {
   width: 30%;
 }

@@ -27,6 +27,13 @@ export default {
     redirectAppointment(){
       window.open("https://coaching-jade-staal.reservio.com/")
     }
+  },
+  mounted() {
+    document.addEventListener("scroll", function (){
+      console.log(scrollY);
+      let nav = document.querySelector(".navbar");
+      nav.classList.toggle("navRed", window.scrollY > 0);
+    })
   }
 }
 </script>
@@ -103,7 +110,7 @@ background: white;
 input:hover {
   color: black;
   background: white;
-  border: 2px solid #29323d;
+  border: 2px solid #9cbac9;
 }
 
 

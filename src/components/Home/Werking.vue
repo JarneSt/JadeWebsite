@@ -93,7 +93,9 @@ h1, h2 {
   color: #798da3;
   font-size: 35px;
 }
-
+h1,h2 {
+  color: #a5c2d0;
+}
 .title {
 }
 p {
