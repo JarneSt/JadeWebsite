@@ -29,11 +29,15 @@ export default {
     }
   },
   mounted() {
+    //? DYNAMIC NAV BAR
+    /*
     document.addEventListener("scroll", function (){
       console.log(scrollY);
       let nav = document.querySelector(".navbar");
       nav.classList.toggle("navRed", window.scrollY > 0);
     })
+
+     */
   }
 }
 </script>
