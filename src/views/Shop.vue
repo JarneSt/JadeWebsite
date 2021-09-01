@@ -1,7 +1,10 @@
 <template>
+
   <div>
     <iframe src="https://www.jadestaal.com/trajectenboeken" scrolling="no"></iframe>
   </div>
+
+
 
 
 </template>

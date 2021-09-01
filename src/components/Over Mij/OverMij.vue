@@ -1,11 +1,21 @@
 <template>
 <div class="fullContainer">
   <div class="firstcolumn">
-    <img id="jadePic" src="../../assets/Jade.png" />
+    <!--<img id="jadePic" src="../../assets/Jade.png" />-->
+    <div class="d-flex">
+      <div class="widthFirstRow">
+        <img id="jadePic" src="../../assets/testbanner-removebg-preview.png"/>
+      </div>
+      <div class="w-50 m-auto secondRow">
+        <h1 id="title">Life Coach</h1>
+      </div>
+    </div>
 
   </div>
+
+
+
   <div class="text-lg-start secondcolumn">
-    <h1 style="font-size: 50px">Life Coach</h1>
     <div class="textblock">
       <p>Welkom! Ik ben Jade Staal, een gedreven en gepassioneerd persoon. </p>
       <p>Ik ben heel mijn leven al geboeid door mensen, dit startte in het helpen van mijn vrienden en naasten.
@@ -70,6 +80,13 @@ export default {
 .rightContainerPicture {
 
 }
+
+#title {
+  font-size: 100px;
+  margin: auto;
+  /* color: floralwhite; */
+  text-shadow: 1px 1px black;
+}
 ul li {
   text-align: left;
 }
@@ -85,12 +102,15 @@ h1 {
 }
 
 .firstcolumn {
+  /*
   border-bottom: 5px solid #FE7CB9;
   border-top: 5px solid #FE7CB9;
-  background-image: url("../../assets/symbol-scatter-haikei.svg");
+  */
+  background-image: url("../../assets/john-fowler-RsRTIofe0HE-unsplash.jpg");
   /*background-image: url("../../assets/symbol-scatter-haikei-blue.svg");
 
    */
+  background-position: revert;
   background-size: cover;
 }
 
@@ -99,13 +119,32 @@ h1 {
   padding-right: 63px;
 }
 #jadePic {
-  width: 20%;
+  width: 40%;
   height: auto;
 }
+
+@media only screen and (min-width: 993px){
+  #jadePic {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 992px){
   #jadePic {
-    width: 50%;
+    width: 100%;
     height: auto;
+  }
+  .secondRow {
+    display: none;
+  }
+  .widthFirstRow {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .widthFirstRow {
+    width: 100%;
   }
 }
 </style>
