@@ -31,6 +31,11 @@ const routes = [
     name: 'tarieven',
     component: TarievenInfo
   },
+  {
+    path: '/shop',
+    name: 'shop',
+    component: Shop
+  },
 ]
 
 const router = createRouter({

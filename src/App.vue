@@ -28,6 +28,9 @@
               <li class="nav-item">
                 <router-link class="nav-link" to="/tarieven">Tarieven en info</router-link>
               </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/shop">Shop</router-link>
+              </li>
               <button type="button" class="btn">SIGN IN</button>
             </ul>
           </div>
