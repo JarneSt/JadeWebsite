@@ -2,7 +2,7 @@
 <div class="fullsection">
   <div class="werking-head mb-5">
     <h1 class="mt-5">Werking</h1>
-    <p>Bij mij kunnen jullie terect vooro zowel coaching als orthopedagogische begeleiding.</p>
+    <p>Bij mij kunnen jullie terecht voor zowel coaching als orthopedagogische begeleiding.</p>
   </div>
 
   <div class="d-flex w-75 m-auto desktopVersionSteps">
