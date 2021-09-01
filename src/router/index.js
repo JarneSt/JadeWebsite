@@ -4,6 +4,7 @@ import Overmij from "../views/Overmij";
 import Aanbod from "../views/Aanbod";
 import Trajecten from "../views/Trajecten";
 import TarievenInfo from "../views/TarievenInfo";
+import Shop from "../views/Shop";
 
 const routes = [
   {
