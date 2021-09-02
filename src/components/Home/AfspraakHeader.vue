@@ -142,7 +142,7 @@ h1 {
     width: 75% !important;
   }
   input {
-    width: 104%;
+    width: 100%;
   }
   p {
     font-size: 17px;
