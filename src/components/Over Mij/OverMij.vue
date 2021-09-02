@@ -1,56 +1,39 @@
 <template>
 <div class="fullContainer">
-  <div class="firstcolumn">
-    <!--<img id="jadePic" src="../../assets/Jade.png" />-->
-    <div class="d-flex">
-      <div class="widthFirstRow">
-        <img id="jadePic" src="../../assets/testbanner-removebg-preview.png"/>
-      </div>
-      <div class="w-50 m-auto secondRow">
-        <h1 id="title">Life Coach</h1>
+    <div class="firstcolumn">
+      <!--<img id="jadePic" src="../../assets/Jade.png" />-->
+      <div class="d-flex">
+        <div class="widthFirstRow">
+          <img id="jadePic" src="../../assets/testbanner-removebg-preview.png"/>
+        </div>
+        <div class="w-50 m-auto secondRow">
+          <h1 id="title">Life Coach</h1>
+        </div>
       </div>
     </div>
-
-  </div>
-
-
-
-  <div class="text-lg-start secondcolumn">
-    <div class="textblock">
-      <p>Welkom! Ik ben Jade Staal, een gedreven en gepassioneerd persoon. </p>
-      <p>Ik ben heel mijn leven al geboeid door mensen, dit startte in het helpen van mijn vrienden en naasten.
-        Maar ook begon ik al vroeg met het opzoeken van stoornissen. Ik ben ervan overtuigd dat wij controle kunnen
-        hebben over onze mindset en ons leven.</p>
-      <p>
-        Ik zelf heb doorheen mijn leven ook al een groeiproces doorstaan in mijn eigen persoonlijke ontwikkeling,
-        op deze manier ben ik mijn passie tegengekomen. Ik ben dagdagelijks bezig met mijn eigen bewustzijn,
-        op die manier ben ik nu in staat om al mijn passies uit te voeren en mij niet te laten tegenhouden
-        door mogelijke drempels of tegenslagen, ik wil anderen erin steunen om dit ook te kunnen doen.</p>
-      <p>Momenteel ben ik zelfstandig persoonlijke ontwikkelingscoach en praktijkgerichte orthopedagoge in bijberoep en
-        daarnaast ben ik leefgroepbegeleidster bij VZW Kids.</p>
+    <div class="text-lg-start secondcolumn">
+      <div class="textblock">
+        <p>Welkom! Ik ben Jade Staal, een gedreven en gepassioneerd persoon. </p>
+        <p>Ik ben heel mijn leven al geboeid door mensen, dit startte in het helpen van mijn vrienden en naasten.
+          Maar ook begon ik al vroeg met het opzoeken van stoornissen. Ik ben ervan overtuigd dat wij controle kunnen
+          hebben over onze mindset en ons leven.</p>
+        <p>
+          Ik zelf heb doorheen mijn leven ook al een groeiproces doorstaan in mijn eigen persoonlijke ontwikkeling,
+          op deze manier ben ik mijn passie tegengekomen. Ik ben dagdagelijks bezig met mijn eigen bewustzijn,
+          op die manier ben ik nu in staat om al mijn passies uit te voeren en mij niet te laten tegenhouden
+          door mogelijke drempels of tegenslagen, ik wil anderen erin steunen om dit ook te kunnen doen.</p>
+        <p>Momenteel ben ik zelfstandig persoonlijke ontwikkelingscoach en praktijkgerichte orthopedagoge in bijberoep en
+          daarnaast ben ik leefgroepbegeleidster bij VZW Kids.</p>
+      </div>
+      <h1>Studies</h1>
+      <ul>
+        <li v-for="studie in studies">{{studie}}</li>
+      </ul>
+      <h1>Ervaring</h1>
+      <ul>
+        <li v-for="ervaring in ervaringen">{{ervaring}}</li>
+      </ul>
     </div>
-
-
-
-
-
-    <h1>Studies</h1>
-
-    <ul>
-      <li v-for="studie in studies">{{studie}}</li>
-    </ul>
-
-
-
-
-
-    <h1>Ervaring</h1>
-    <ul>
-      <li v-for="ervaring in ervaringen">{{ervaring}}</li>
-    </ul>
-
-    <p></p>
-  </div>
 </div>
 </template>
 

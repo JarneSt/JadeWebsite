@@ -1,6 +1,5 @@
 <template>
 <div class="fullSection">
-
   <div class="desktopVersionVoordelen">
     <h1 class="mt-5">Voordelen van coaching</h1>
 

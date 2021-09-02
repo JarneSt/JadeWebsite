@@ -1,12 +1,11 @@
 <template>
 <div class="fullsection">
+  <progress-scroll>
   <div class="werking-head mb-5">
     <h1 class="mt-5">Werking</h1>
     <p>Bij mij kunnen jullie terecht voor zowel coaching als orthopedagogische begeleiding.</p>
   </div>
-
   <div class="d-flex w-75 m-auto desktopVersionSteps">
-
     <div class="d-flex flex-column w-50">
       <h1 class="roundnumber text-align">01</h1>
       <h2 class="title mt-3">Intake</h2>
@@ -22,11 +21,8 @@
       <h2 class="title mt-3">Afrondgesprek</h2>
       <p class="widthtext m-auto">Wanneer het coachtraject is afgelopen doen we een afrondgesprek waarin wij al jouw tools samenvatten.</p>
     </div>
-
   </div>
-
   <div class="d-flex w-75 m-auto mobileVersionSteps">
-
     <div class="d-flex flex-column w-50 m-auto mb-10">
       <h1 class="roundnumber text-align">01</h1>
       <h2 class="title mt-3">Intake</h2>
@@ -43,7 +39,7 @@
       <p class="widthtext m-auto">Wanneer het coachtraject is afgelopen doen we een afrondgesprek waarin wij al jouw tools samenvatten.</p>
     </div>
   </div>
-
+  </progress-scroll>
 </div>
   <hr>
 </template>

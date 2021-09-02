@@ -1,8 +1,8 @@
 <template>
   <div>
-    <AfspraakHeader/>
-    <Werking/>
-    <VoordelenCoaching/>
+      <AfspraakHeader/>
+      <Werking/>
+      <VoordelenCoaching/>
   </div>
 </template>
 
