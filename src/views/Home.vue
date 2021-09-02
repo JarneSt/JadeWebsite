@@ -1,8 +1,8 @@
 <template>
   <div>
-      <AfspraakHeader/>
-      <Werking/>
-      <VoordelenCoaching/>
+    <AfspraakHeader/>
+    <Werking/>
+    <VoordelenCoaching/>
   </div>
 </template>
 
@@ -14,13 +14,14 @@
 import AfspraakHeader from "../components/Home/AfspraakHeader";
 import Werking from "../components/Home/Werking";
 import VoordelenCoaching from "../components/Home/VoordelenCoaching";
+import {useSnakke} from "vue-snakke";
 export default {
   name: 'Home',
   components: {
     VoordelenCoaching,
     Werking,
     AfspraakHeader
-  }
+  },
 
 }
 </script>

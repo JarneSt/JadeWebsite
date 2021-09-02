@@ -15,8 +15,8 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "vue": "^3.2.6",
-    "vue-loading-bar": "^1.0.0",
     "vue-router": "^4.0.0-0",
+    "vue-snakke": "0.0.7",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
@@ -25,6 +25,6 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "vue-progress-scroll": "^1.1.1"
+    "vue-scroll-indicator": "^0.1.3"
   }
 }
