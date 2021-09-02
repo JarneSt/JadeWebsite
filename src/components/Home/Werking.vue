@@ -1,6 +1,6 @@
 <template>
 <div class="fullsection">
-  <progress-scroll>
+  <progress-scroll background="#a2bfd1">
   <div class="werking-head mb-5">
     <h1 class="mt-5">Werking</h1>
     <p>Bij mij kunnen jullie terecht voor zowel coaching als orthopedagogische begeleiding.</p>
