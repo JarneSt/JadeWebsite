@@ -81,9 +81,17 @@ nav {
   color: #81d3f8;
 }
 
+@media only screen and (max-width: 975px){
+  #nav a.router-link-exact-active {
+    color: #FD585C !important;
+  }
+
+}
+
 </style>
 
 <style scoped>
+
 .navbar {
   background-color: white;
 }

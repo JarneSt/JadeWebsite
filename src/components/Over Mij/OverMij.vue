@@ -7,37 +7,53 @@
           <h1 id="title">About Me</h1>
         </div>
         <div class="widthFirstRow">
-          <img id="jadePic" src="../../assets/_DSC0007-removebg-preview.png"/>
+          <img id="jadePicMobile" src="../../assets/_DSC0007-removebg-preview.png" alt="Jade"/>
         </div>
       </div>
     </div>
     <div class="text-lg-start secondcolumn">
-
         <div class="textblock1">
-          <h1>Welkom!</h1>
-          <p id="shortInfo">Ik ben <strong>Jade Staal</strong>, een gedreven en gepassioneerd persoon. </p>
-          <p>Ik ben heel mijn leven al geboeid door mensen, dit startte in het helpen van mijn vrienden en naasten.
-            Maar ook begon ik al vroeg met het opzoeken van stoornissen. Ik ben ervan overtuigd dat wij controle kunnen
-            hebben over onze mindset en ons leven.</p>
-          <p>
-            Ik zelf heb doorheen mijn leven ook al een groeiproces doorstaan in mijn eigen persoonlijke ontwikkeling,
-            op deze manier ben ik mijn passie tegengekomen. Ik ben dagdagelijks bezig met mijn eigen bewustzijn,
-            op die manier ben ik nu in staat om al mijn passies uit te voeren en mij niet te laten tegenhouden
-            door mogelijke drempels of tegenslagen, ik wil anderen erin steunen om dit ook te kunnen doen.</p>
-          <p>Momenteel ben ik zelfstandig persoonlijke ontwikkelingscoach en praktijkgerichte orthopedagoge in bijberoep en
-            daarnaast ben ik leefgroepbegeleidster bij VZW Kids.</p>
+
+          <div class="containerText">
+            <h1>Welkom!</h1>
+            <p id="shortInfo">Ik ben <strong>Jade Staal</strong>, een gedreven en gepassioneerd persoon. </p>
+            <p>Ik ben heel mijn leven al geboeid door mensen, dit startte in het helpen van mijn vrienden en naasten.
+              Maar ook begon ik al vroeg met het opzoeken van stoornissen. Ik ben ervan overtuigd dat wij controle kunnen
+              hebben over onze mindset en ons leven.</p>
+            <p>
+              Ik zelf heb doorheen mijn leven ook al een groeiproces doorstaan in mijn eigen persoonlijke ontwikkeling,
+              op deze manier ben ik mijn passie tegengekomen. Ik ben dagdagelijks bezig met mijn eigen bewustzijn,
+              op die manier ben ik nu in staat om al mijn passies uit te voeren en mij niet te laten tegenhouden
+              door mogelijke drempels of tegenslagen, ik wil anderen erin steunen om dit ook te kunnen doen.</p>
+            <p>Momenteel ben ik zelfstandig persoonlijke ontwikkelingscoach en praktijkgerichte orthopedagoge in bijberoep en
+              daarnaast ben ik leefgroepbegeleidster bij VZW Kids.</p>
+          </div>
+
+          <div class="containerImage">
+            <img id="jadePicDesktop" src="../../assets/_DSC0007-removebg-preview.png" alt="Jade"/>
+          </div>
         </div>
 
 
         <div style="background-color: #f7f6f6;">
           <div class="studies">
-            <h1>Studies</h1>
-            <div v-for="studie in studies">
+            <div v-for="studie in studies1">
               <font-awesome-icon :icon="studie.icon" />
               <p class="studieTitle">{{studie.title}}</p>
             </div>
           </div>
         </div>
+
+      <div style="background-color: #f7f6f6;">
+        <div class="studies">
+          <div v-for="studie in studies2">
+            <font-awesome-icon :icon="studie.icon" />
+            <p class="studieTitle">{{studie.title}}</p>
+          </div>
+        </div>
+      </div>
+
+
 
       <div style="background-color: #fff;">
         <div class="ervaringen">
@@ -62,24 +78,27 @@ export default {
   name: "OverMij",
   data(){
     return {
-      studies : [
-          {
-            title : 'Coachopleiding tot Life Coach',
-            icon : ['far', 'life-ring']
-          },
+      studies1 : [
+        {
+          title : '1/3 professionele Bachelor Toegepaste Psychologie',
+          icon : ['fas', 'university']
+        },
           {
             title : 'Professionele Bachelor Praktijkgericht Orthopedagoog',
             icon : ['fas', 'user-graduate']
           },
-          {
-            title : '1/3 professionele Bachelor Toegepaste Psychologie',
-            icon : ['fas', 'university']
-          },
-          {
-            title : 'HSP coach in opleiding',
-            icon : ['fas', 'balance-scale-right']
-          }
         ],
+      studies2 : [
+        {
+          title : 'Coachopleiding tot Life Coach',
+          icon : ['far', 'life-ring']
+        },
+        {
+          title : 'HSP coach in opleiding',
+          icon : ['fas', 'balance-scale-right']
+        }
+      ]
+      ,
       ervaringen : [
         {
           title : 'Buitengewoon basisonderwijs \'De Dolfijn\': ASS, hechting, ADHD,..',
@@ -104,6 +123,17 @@ export default {
 </script>
 
 <style scoped>
+.firstcolumn {
+  display: none;
+}
+
+#jadePicMobile {
+  display: none;
+}
+#jadePicDesktop {
+  display: block;
+  width: 255px;
+}
 svg {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -130,15 +160,19 @@ h1 {
   padding: 20px;
   width: 50%;
   margin: auto;
+  display: flex;
 }
 
 .studies,.ervaringen {
   text-align: center;
   padding: 20px;
-  width: 50%;
   margin: auto;
 }
 
+.studies {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 .textblock2 div {
@@ -161,23 +195,47 @@ h1 {
 }
 
 
-#jadePic {
-  width: 60% !important;
-  margin-right: 10em;
-  height: auto;
+@media only screen and (min-width: 1400px){
+  .textblock1 {
+    width: 50% !important;
+  }
+  .containerText {
+    width: 50%;
+  }
+  .containerImage {
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .textblock1 {
+    width: 30% !important;
+    padding-left: 10em;
+    margin-top: 1em;
+  }
+  .containerText {
+    padding: 20px;
+  }
 }
 
-@media only screen and (min-width: 993px){
-  #jadePic {
-    width: 100%;
+@media only screen and (min-width: 992px){
+  .textblock1 {
+    width: 87% !important;
   }
 }
 
 @media only screen and (max-width: 992px){
-  #jadePic {
+  #jadePicMobile {
     width: 22% !important;
     height: auto;
     margin: auto;
+    display: block;
+  }
+  .firstcolumn {
+    display: block;
+  }
+
+  #jadePicDesktop {
+    display: none;
   }
   .textblock1, .studies, .ervaringen {
     margin: 0;
@@ -192,7 +250,11 @@ h1 {
   .widthFirstRow {
     width: 100%;
   }
+  .studies {
+    display: block;
+  }
 }
+
 
 @media only screen and (max-width: 630px){
   .widthFirstRow {
