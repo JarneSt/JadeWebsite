@@ -35,14 +35,28 @@
         </div>
 
 
-        <div style="background-color: #f7f6f6;">
-          <div class="studies">
-            <div v-for="studie in studies1">
-              <font-awesome-icon :icon="studie.icon" />
-              <p class="studieTitle">{{studie.title}}</p>
-            </div>
+
+
+
+
+      <div>
+        <div class="ervaringen">
+          <h1>Ervaring</h1>
+          <div style="padding: 6em" :style="'background: '+ervaring.bgcolor" v-for="ervaring in ervaringen">
+            <img :src="require('../../assets/ervaring/' + ervaring.image)">
+            <h6 style="padding-top:3em;">{{ervaring.title}}</h6>
+            <p>{{ervaring.info}}</p>
           </div>
         </div>
+      </div>
+      <div style="background-color: #f7f6f6;">
+        <div class="studies">
+          <div v-for="studie in studies1">
+            <font-awesome-icon :icon="studie.icon" />
+            <p class="studieTitle">{{studie.title}}</p>
+          </div>
+        </div>
+      </div>
 
       <div style="background-color: #f7f6f6;">
         <div class="studies">
@@ -52,24 +66,7 @@
           </div>
         </div>
       </div>
-
-
-
-      <div style="background-color: #fff;">
-        <div class="ervaringen">
-          <h1>Ervaring</h1>
-          <div v-for="ervaring in ervaringen">
-            <font-awesome-icon :icon="ervaring.icon" />
-            <p>{{ervaring.title}}</p>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-    </div>
+</div>
 </div>
 </template>
 
@@ -101,20 +98,32 @@ export default {
       ,
       ervaringen : [
         {
-          title : 'Buitengewoon basisonderwijs \'De Dolfijn\': ASS, hechting, ADHD,..',
-          icon : ['far', 'life-ring']
+          title : "Ons Kinderhuis kamertraining: ",
+          info : "kwetsbare jongeren ondersteunen naar een zelfstandig leven",
+          image : "onsKinderhuis.png",
+          link : "https://kinderhuis.net/",
+          bgcolor : "#EF5359"
         },
         {
-          title : 'Ons Kinderhuis kamertraining: kwetsbare jongeren ondersteunen naar een zelfstandig leven',
-          icon : ['fas', 'user-graduate']
+          title : "Buitengewoon basisonderwijs \"De Dolfijn\":",
+          info : "ASS, hechting, ADHD,..",
+          image : "DeDolfijn.jpg",
+          link : "https://sites.google.com/dedolfijn.info/dedolfijn",
+          bgcolor : "#fff"
         },
         {
-          title : 'VZW Kids: ASS, hechting, spraak-en taalstoornissen',
-          icon : ['fas', 'university']
+          title : "VZW Kids:",
+          info : "ASS, hechting, spraak-en taalstoornissen",
+          image : "kids.png",
+          link : "https://www.kids.be/",
+          bgcolor: "#009FAC"
         },
         {
-          title : 'Eenzaamheid en dementie in WZC Prinsenpark',
-          icon : ['fas', 'balance-scale-right']
+          title : "WZC Prinsenpark",
+          info : "Eenzaamheid en dementie",
+          image : "prinsenpark.png",
+          link : "https://www.korian.be/nl/woonzorgcentra/kor/47-residentie-prinsenpark",
+          bgcolor: "#fff"
         }
       ]
     }
@@ -126,6 +135,10 @@ export default {
 .firstcolumn {
   display: none;
 }
+.ervaringen img {
+  width: 20%;
+}
+
 
 #jadePicMobile {
   display: none;
@@ -165,12 +178,14 @@ h1 {
 
 .studies,.ervaringen {
   text-align: center;
-  padding: 20px;
   margin: auto;
 }
 
+
+
 .studies {
   display: flex;
+  padding: 20px;
   justify-content: space-evenly;
 }
 
@@ -193,7 +208,11 @@ h1 {
   background-position: revert;
   background-size: cover;
 }
-
+@media only screen and (max-width: 1400px){
+  .ervaringen img {
+    width: 30% !important;
+  }
+}
 
 @media only screen and (min-width: 1400px){
   .textblock1 {
@@ -259,6 +278,9 @@ h1 {
 @media only screen and (max-width: 630px){
   .widthFirstRow {
     width: 100%;
+  }
+  .ervaringen img {
+    width: 100% !important;
   }
 }
 </style>

@@ -17,6 +17,7 @@
     "vue": "^3.2.6",
     "vue-router": "^4.0.0-0",
     "vue-snakke": "0.0.7",
+    "vue3-perfect-scrollbar": "^1.5.5",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
