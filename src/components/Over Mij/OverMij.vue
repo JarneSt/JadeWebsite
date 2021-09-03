@@ -80,7 +80,7 @@ export default {
     return {
       studies1 : [
         {
-          title : '1/3 professionele Bachelor Toegepaste Psychologie',
+          title : '1/3 Professionele Bachelor Toegepaste Psychologie',
           icon : ['fas', 'university']
         },
           {
