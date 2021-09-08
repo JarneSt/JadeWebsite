@@ -34,38 +34,64 @@
           </div>
         </div>
 
-
-
-
-
-
-      <div>
+      <div class="mobileErvaringen">
         <div class="ervaringen">
           <h1>Ervaring</h1>
-          <div style="padding: 6em" :style="'background: '+ervaring.bgcolor" v-for="ervaring in ervaringen">
+          <div class="p6em" :style="'background: '+ervaring.bgcolor" v-for="ervaring in ervaringen">
             <img :src="require('../../assets/ervaring/' + ervaring.image)">
             <h6 style="padding-top:3em;">{{ervaring.title}}</h6>
             <p>{{ervaring.info}}</p>
           </div>
         </div>
       </div>
-      <div style="background-color: #f7f6f6;">
-        <div class="studies">
-          <div v-for="studie in studies1">
-            <font-awesome-icon :icon="studie.icon" />
-            <p class="studieTitle">{{studie.title}}</p>
+      <div class="desktopErvaringen">
+        <h1>Ervaring</h1>
+        <div class="ervaringen d-flex">
+          <div class="w-50 p6em" :style="'background: '+ervaring1.bgcolor" v-for="ervaring1 in ervaringen1">
+            <img :src="require('../../assets/ervaring/' + ervaring1.image)">
+            <h6>{{ervaring1.title}}</h6>
+            <p>{{ervaring1.info}}</p>
+          </div>
+        </div>
+
+        <div class="ervaringen d-flex">
+          <div class="w-50 p6em" :style="'background: '+ervaring2.bgcolor" v-for="ervaring2 in ervaringen2">
+            <img :src="require('../../assets/ervaring/' + ervaring2.image)">
+            <h6>{{ervaring2.title}}</h6>
+            <p>{{ervaring2.info}}</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <div class="fullStudies">
+        <div>
+          <div class="studies">
+            <div v-for="studie in studies1">
+              <font-awesome-icon :icon="studie.icon" />
+              <p class="studieTitle">{{studie.title}}</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="studies">
+            <div v-for="studie in studies2">
+              <font-awesome-icon :icon="studie.icon" />
+              <p class="studieTitle">{{studie.title}}</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div style="background-color: #f7f6f6;">
-        <div class="studies">
-          <div v-for="studie in studies2">
-            <font-awesome-icon :icon="studie.icon" />
-            <p class="studieTitle">{{studie.title}}</p>
-          </div>
-        </div>
-      </div>
+
+
+
 </div>
 </div>
 </template>
@@ -125,6 +151,43 @@ export default {
           link : "https://www.korian.be/nl/woonzorgcentra/kor/47-residentie-prinsenpark",
           bgcolor: "#fff"
         }
+      ],
+
+
+      ervaringen1 : [
+        {
+          title : "Ons Kinderhuis kamertraining: ",
+          info : "kwetsbare jongeren ondersteunen naar een zelfstandig leven",
+          image : "onsKinderhuis.png",
+          link : "https://kinderhuis.net/",
+          bgcolor : "#EF5359"
+        },
+        {
+          title : "Buitengewoon basisonderwijs \"De Dolfijn\":",
+          info : "ASS, hechting, ADHD,..",
+          image : "DeDolfijn.jpg",
+          link : "https://sites.google.com/dedolfijn.info/dedolfijn",
+          bgcolor : "#fff"
+        }
+
+        ],
+
+
+      ervaringen2 : [
+      {
+        title : "WZC Prinsenpark",
+        info : "Eenzaamheid en dementie",
+        image : "prinsenpark.png",
+        link : "https://www.korian.be/nl/woonzorgcentra/kor/47-residentie-prinsenpark",
+        bgcolor: "#fff"
+      },
+        {
+          title : "VZW Kids:",
+          info : "ASS, hechting, spraak-en taalstoornissen",
+          image : "kids.png",
+          link : "https://www.kids.be/",
+          bgcolor: "#009FAC"
+        }
       ]
     }
   }
@@ -132,6 +195,19 @@ export default {
 </script>
 
 <style scoped>
+.p6em {
+  padding:6em;
+}
+.mobileErvaringen {
+  display: none;
+}
+.desktopErvaringen {
+  display: block;
+
+}
+.desktopErvaringen h1 {
+  text-align: center;
+}
 .firstcolumn {
   display: none;
 }
@@ -152,7 +228,11 @@ svg {
   margin-bottom: 20px;
   font-size: 50px;
 }
-
+.ervaringen h6 {
+  padding-top: 3em;
+  font-size: 25px;
+  font-weight: bold;
+}
 #title {
   font-size: 100px;
   margin: auto;
@@ -172,8 +252,8 @@ h1 {
   text-align: left;
   padding: 20px;
   width: 50%;
-  margin: auto;
   display: flex;
+  margin: auto auto 14em;
 }
 
 .studies,.ervaringen {
@@ -260,6 +340,9 @@ h1 {
     margin: 0;
     width: 100%;
   }
+  .textblock1 {
+    margin-bottom: 3em !important;
+  }
   h1 {
     text-align: center;
   }
@@ -271,6 +354,14 @@ h1 {
   }
   .studies {
     display: block;
+  }
+
+  .mobileErvaringen {
+    display: block;
+  }
+
+  .desktopErvaringen{
+    display: none;
   }
 }
 
